@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 import 'fourth.dart';
 
 class ThirdScreen extends StatelessWidget {
+  const ThirdScreen({super.key});
+
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: Text('Third Screen'),
+        title: const Text('Third Screen'),
         centerTitle: true,
       ),
       body: Center(
           child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
         ),
-        child: Text('Go to Screen 4', style: TextStyle()),
+        child: const Text('Go to Screen 4', style: TextStyle()),
         onPressed: () {
           Navigator.push(
             context,

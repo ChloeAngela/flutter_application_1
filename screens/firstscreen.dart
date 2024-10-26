@@ -2,23 +2,25 @@ import 'package:flutter/material.dart';
 import 'secondscreen.dart';
 
 class FirstScreen extends StatelessWidget {
+  const FirstScreen({super.key});
+
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: Text('First Screen'),
+        title: const Text('First Screen'),
         centerTitle: true,
       ),
       body: Center(
           child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
         ),
-        child: Text('Go to Screen 2', style: TextStyle()),
+        child: const Text('Go to Screen 2', style: TextStyle()),
         onPressed: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => SecondScreen(
+              builder: (context) => const SecondScreen(
                 name: 'Go to Screen 3',
                 age: 20,
               ),
